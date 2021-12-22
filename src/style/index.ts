@@ -10,29 +10,27 @@ import PersonalMarkHover from '../assets/MarkHover.svg'
     White: #EEEEEE
 
 */
-
 /* Titles */
 export const Titles = styled.h1`
     font-size: 2rem;
     color: orange;
 `
-export const LItem = styled.h2`
-    width: auto;
+export const LItem = styled.a`
+    width: 100%;
     font-size: 1.2rem;
     font-weight: 400;
+    text-decoration: none;
+    color: #222831;
     margin: auto 20px;
-    &:after{
-        content: '';
-        position: absolute;
-        height: 0.175rem;
-        background: #222831;
-    }
-    &:hover::after{
-        transform: scale(1.11);
+    cursor: pointer;
+    &:hover{
+        border-bottom: 2px solid #222831;
     }
 `
-
 export const NavContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: auto;
     padding: 30px 50px;
     display: flex;
     flex-direction: row;
@@ -43,7 +41,7 @@ export const NavList = styled.div`
     flex-direction: row;
     justify-content: space-around;
 `
-export const Mark = styled.div`
+export const Mark = styled.a`
     margin-bottom: 4px;
     width: 75px;
     height: 50px;
@@ -51,7 +49,7 @@ export const Mark = styled.div`
     cursor: pointer;
     &:hover{
         margin: 7px 0 0 20.5px;
-        width: 163px;
+        width: 160px;
         height: 47px;
         background-image: url(${PersonalMarkHover});
     }

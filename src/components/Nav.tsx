@@ -5,7 +5,7 @@ const Nav = () => {
         <NavContainer>
             <Mark />
             <NavList>
-                <LItem>About</LItem>
+                <LItem href="#Footer">About</LItem>
                 <LItem>Experience</LItem>
                 <LItem>Works</LItem>
                 <LItem>Hobbies</LItem>
